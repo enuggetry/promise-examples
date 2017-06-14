@@ -1,8 +1,7 @@
 # Promise Examples
 
 Node.js examples of promise chains using bluebird promises.
-Demonstrate some use patterns.
-Demonstration of clean premature exit from promise chain.
+Demonstrate some use patterns and case of clean premature exit from promise chain.
 
 ### Install
 ```
@@ -16,7 +15,7 @@ demonstrates basic promise chain
 ```
 node ex-basic.js
 ```
-demo of premature promise chain exit using throw
+demo of premature promise chain exit using throw (non ideal)
 ```
 node ex-exit-chain.js
 ```
@@ -25,5 +24,6 @@ Thus, the catch-all is not executed.
 ```
 node ex-exit-chain_1.js
 ```
+
 
 
