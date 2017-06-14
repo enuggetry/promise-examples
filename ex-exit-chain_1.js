@@ -3,6 +3,7 @@
  * 
  * The exit handler must inherit from Error.  Thus, the catch all would not be called.
  * 
+ * ref: https://www.sitepoint.com/simple-inheritance-javascript/
  */
 
 var promise = require('bluebird');
