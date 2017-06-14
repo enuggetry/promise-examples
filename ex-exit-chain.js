@@ -26,10 +26,14 @@ fs.readFileAsync("myfile.json", "utf8").then(function(data) {
 
     console.log("statusCode",data2.statusCode,"statusMessage",data2.statusMessage);
 
-    // premature exit <-------------------------------------
+    // premature exit #1 <-------------------------------------
     throw new myExitHandler();
+    
+    // premature exit #2
+    // you would think a simple return might work but it actually causes problems with the promise engine, 
+    // then hits the catch-all handler.  so the net effect is similar to #1
+    //return myExitHandler();
 
-    // delete this file to make this fail
     console.log('step 3');
 
     return fs.readFileAsync("myfile_1.json", "utf8");
@@ -42,9 +46,11 @@ fs.readFileAsync("myfile.json", "utf8").then(function(data) {
      
 }).catch(function(err){                 // catch all errors
     //error handling logic
-    console.log('error',err);
+    console.log('catch-all error',err);
     displayResults(r1,r2,r3);
 });
+
+
 
 function myExitHandler(r1,r2,r3) {
     console.log("MyExitHandler");
