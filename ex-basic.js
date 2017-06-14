@@ -1,3 +1,11 @@
+/*
+ * demonstrates a basic promise chain.
+ * 
+ * Demonstrate error condition by:
+ * 1) disable network
+ * 2) delete one of the files from the local directory.
+ */
+
 var promise = require('bluebird');
 var fs = promise.promisifyAll(require("fs"));
 var request = promise.promisifyAll(require("request"));
@@ -19,13 +27,17 @@ fs.readFileAsync("myfile.json", "utf8").then(function(data) {
 
     return fs.readFileAsync("myfile_1.json", "utf8");
 }).then(function(data3) {
-    r3 = data3;
+    r3 = JSON.parse(data3);
 
     // can access r1 or r2 or r3
     console.log(">>> r1",r1);
     console.log(">>> r2",r2);
     console.log(">>> r3",r3);
-     
+
+    console.log("r1",typeof r1);
+    console.log("r2",typeof r2);
+    console.log("r3",typeof r3);
+
      
 }).catch(function(err){                 // catch all errors
     //error handling logic
@@ -35,3 +47,4 @@ fs.readFileAsync("myfile.json", "utf8").then(function(data) {
     console.log("r2",typeof r2);
     console.log("r3",typeof r3);
 });
+
