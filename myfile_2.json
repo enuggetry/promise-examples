@@ -1,0 +1,34 @@
+{
+      "workflow": {
+        "steps": [
+          {
+            "workflow_step_uuid": "aeebb08f-9c75-4058-a0fa-787df3dbc718",
+            "update_time": "2017-06-13T06:43:44.512096",
+            "job_id": null,
+            "state": null,
+            "workflow_step_label": "Input fasta",
+            "order_index": 0,
+            "action": null,
+            "model_class": "WorkflowInvocationStep",
+            "workflow_step_id": "a799d38679e985db",
+            "id": "ff5476bcf6c921fa"
+          },
+          {
+            "workflow_step_uuid": "effe61af-85ef-4bc4-a296-04666ffee622",
+            "update_time": "2017-06-13T06:43:44.923270",
+            "job_id": "911dde3ddb677bcd",
+            "state": "new",
+            "workflow_step_label": "export blastxml",
+            "order_index": 1,
+            "action": null,
+            "model_class": "WorkflowInvocationStep",
+            "workflow_step_id": "5969b1f7201f12ae",
+            "id": "79966582feb6c081"
+          }
+        ],
+        "model_class": "WorkflowInvocation",
+        "id": "417e33144b294c21",
+        "history": "f597429621d6eb2b",
+        "name": "JBlast Sim Hits B (imported from API)"
+      }
+}
