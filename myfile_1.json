@@ -8,6 +8,6 @@
         "type": "JBrowse/View/Track/HTMLFeatures",
         "metadata": {
           "description": "Workflow: JBlast Sim Hits B (imported from API)"
-        },
+        }
       }
 }
