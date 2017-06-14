@@ -1,21 +1,8 @@
 {
     "id": 1787,
     "promote_at": "1497336223625",
-    "created_at": "1497336223625",
-    "updated_at": "1497352564266",
     "started_at": "1497336223652",
     "progress_data": {
       "workflow_id": "1cd8e2f6b131e891"
     },
-    "priority": 0,
-    "progress": "100",
-    "state": "failed",
-    "attempts": {
-      "made": 1,
-      "remaining": 0,
-      "max": 1
-    },
-    "workerId": "kue:osboxes:14790:workflow:1",
-    "createdAt": "2017-06-13T12:16:42.707Z",
-    "updatedAt": "2017-06-13T12:54:18.600Z"
 }

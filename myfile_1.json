@@ -9,13 +9,5 @@
         "metadata": {
           "description": "Workflow: JBlast Sim Hits B (imported from API)"
         },
-        "category": "JBlast Results",
-        "key": "blast 1787 ctgA:(19157..22915)- len 3759",
-        "label": "1787_911dde3ddb677bcd",
-        "baseUrl": "/",
-        "urlTemplate": "/jbapi/gettrackdata/1787_911dde3ddb677bcd/sample_data%2Fjson%2Fvolvox",
-        "storeCache": false,
-        "filterSettings": "jblastdata/1787_911dde3ddb677bcd_filtersettings.json",
-        "jblast": 1
       }
 }
